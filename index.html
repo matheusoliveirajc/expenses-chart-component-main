@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"/>
+  <title>Frontend Mentor | Expenses chart component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <main id="container">
+    <section id="balance-section">
+      <div class="balance-info">
+        <h1>My balance</h1>
+        <p class="current-balance">$0,00</p>
+      </div>
+      <picture class="logo">
+        <img src="images/logo.svg" alt="logo"/>
+      </picture>
+    </section>
+    <section id="expense-analytics">
+      <h1>Spending - Last 7 days</h1>
+      <section id="graphic">
+        <div class="collumn">
+          <span class="money-spent">0,00</span>
+          <div class="monday-collumn day-collumn"></div>
+          <p class="weekDay">mon</p>
+        </div>
+        <div class="collumn">
+          <span class="money-spent">0,00</span>
+          <div class="tuesday-collumn day-collumn"></div>
+          <p class="weekDay">tue</p>
+        </div>
+        <div class="collumn">
+          <span class="money-spent">0,00</span>
+          <div class="wednesday-collumn day-collumn"></div>
+          <p class="weekDay">wed</p>
+        </div>
+        <div class="collumn">
+          <span class="money-spent">0,00</span>
+          <div class="thursday-collumn day-collumn"></div>
+          <p class="weekDay">thu</p>
+        </div>
+        <div class="collumn">
+          <span class="money-spent">0,00</span>
+          <div class="friday-collumn day-collumn"></div>
+          <p class="weekDay">fri</p>
+        </div>
+        <div class="collumn">
+          <span class="money-spent">0,00</span>
+          <div class="saturday-collumn day-collumn"></div>
+          <p class="weekDay">sat</p>
+        </div>
+        <div class="collumn">
+          <span class="money-spent">0,00</span>
+          <div class="sunday-collumn day-collumn"></div>
+          <p class="weekDay">Sun</p>
+      </section>
+      <section id="results">
+        <h1>Total this week</h1>
+        <p class="total-spent">0,00</p>
+      </section>
+    </section>
+  </main>
+    <footer class="attribution">
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+      <p>Coded by <a href="#">Matheus de Oliveira</a>.</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+<script src="data.js"></script>
+</html>

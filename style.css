@@ -1,0 +1,119 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --background: #f7e9dc;
+    --soft-red: #ec755d;
+    --soft-red-dark: #ce6a57;
+    --white: rgb(250, 250, 250);
+    --black: rgb(27, 27, 27);
+    --brown: rgb(56, 35, 20);
+}
+body{background-color: var(--background);}
+#container{
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    margin: 100px auto 10px auto;
+}
+#balance-section{
+    background-color: var(--soft-red);
+    border-radius: 1rem;
+    padding: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.balance-info h1{
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.current-balance{
+    color: var(--white);
+    font-size: 2rem;
+}
+.balance-info{display: block;}
+.logo{
+    display: flex;
+    align-items: center;
+}
+#expense-analytics{
+    background-color: var(--white);
+    border-radius: 1rem;
+    padding: 1.4rem;
+    width: 100%;
+}
+#expense-analytics > h1{
+    font-size: 2rem;
+    color: var(--black);
+}
+#graphic{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    height: 300px;
+    gap: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, .2);
+    padding-bottom: 10px;
+}
+.collumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+.day-collumn{
+    background-color: var(--soft-red);
+    width: 100%;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+.day-collumn:hover{opacity: 0.8;}
+.money-spent{
+    background-color: var(--brown);
+    color: var(--white);
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    opacity: 0;
+    transition: all 0.2s;
+}
+.collumn:hover .money-spent{
+    opacity: 100%;
+}
+#results h1{
+    font-size: 2rem;
+    margin: 20px 0px 10px 0px;
+}
+.weekDay{
+    color: var(--black);
+    opacity: 70%;
+}
+.today-graphic{
+    background-color: #76b5bc;
+}
+.current-day{
+    opacity: 100%;
+    font-weight: bold;
+}
+.attribution{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 8px;
+}
+.attribution a{
+    color: var(--soft-red);
+    transition: all 0.2s;
+}
+.attribution a:hover{color: var(--soft-red-dark);}
