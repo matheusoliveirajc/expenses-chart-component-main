@@ -1,5 +1,5 @@
 function run(){
-    let day = 0;
+    let day = new Date().getDay();
     let dayCollumn = document.querySelectorAll('.day-collumn');
     let weekDay = document.querySelectorAll('.weekDay');
     let currentBalance = document.querySelector('.current-balance');
